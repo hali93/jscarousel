@@ -16,7 +16,7 @@
 	border: 2px solid black;
 }
 #carousel ul {
-	position: relative;
+	position: absolute;
 	width: 3000px;
 	padding: 0;
 	margin: 0;
@@ -55,12 +55,12 @@
     bottom: 0;
     left: 15px;
 }
-.carousel-pagination a {
+.carousel-pagination li {
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    line-height: 14px;
-    min-width: 14px;
+    height: 14px;
+    width: 14px;
     background: #fff;
     color: #4E443C;
     border-radius: 14px;
@@ -68,8 +68,9 @@
     text-align: center;
     margin-right: 2px;
     opacity: .75;
+    margin: 5px;
 }
-.carousel-pagination a.active {
+.carousel-pagination li.active {
     background: #4E443C;
     color: #fff;
     opacity: 1;
